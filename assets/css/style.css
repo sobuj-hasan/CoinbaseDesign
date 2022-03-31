@@ -1,0 +1,586 @@
+@import "default.css";
+
+
+/*HEADER*/
+header {
+    height: 70px;
+    background: #ffffff;
+    transition: .4s;
+    border-bottom: 1px solid #eceff1;
+}
+
+.logo img {
+    max-width: 140px;
+}
+
+.logo i {
+    font-size: 22px;
+    padding: 8px;
+    padding-right: 0;
+    transition: .2s;
+}
+
+.logo i:hover {
+    color: var(--sc);
+    cursor: pointer;
+}
+
+.menubar ul {
+    text-align: right;
+}
+
+.menubar ul li {
+    display: inline-block;
+}
+
+.menubar ul li a {
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    height: 35px;
+    padding: 7px 20px;
+    color: var(--pc);
+}
+.menubar ul li a:hover{
+    color: var(--bc);
+    transition: 0.4s;
+}
+.menubar .login-menu {
+    background: var(--bc);
+    color: var(--wc);
+    border-radius: 5px;
+    padding: 7px 15px;
+}
+.menubar .login-menu:hover{
+    color: var(--wc);
+}
+
+/*HEADER*/
+
+/*MOBILE MENU*/
+
+/*ACCORDION CUSTOM*/
+.mobile-logo img {
+    width: 150px;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+.mobile-logo i {
+    font-size: 20px;
+    float: right;
+    margin: 5px 20px;
+    color: var(--pc);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-logo i:hover {
+    color: var(--sc);
+}
+
+.custom.accordion-button {
+    text-transform: capitalize;
+    font-size: 15px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: var(--pc);
+    font-weight: 400;
+}
+
+.custom.accordion-button:hover {
+    color: var(--sc);
+}
+
+.custom.accordion-button:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #ccc;
+
+}
+
+.custom.accordion-button:not(.collapsed) {
+    color: var(--sc);
+    background: var(--rc);
+    -webkit-transform: none;
+    transform: none;
+    font-weight: 400;
+}
+
+.custom.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "\f068";
+    font-family: 'FontAwesome';
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+
+.none.accordion-button:not(.collapsed)::after {
+    content: none;
+    -webkit-transform: rotate(0deg) !important;
+    transform: rotate(0deg) !important;
+}
+
+
+.custom.accordion-button::after {
+    background-image: none;
+    content: "\f067";
+    font-family: 'FontAwesome';
+}
+
+.none.accordion-button::after {
+    content: none;
+}
+
+.custom.accordion-body {
+    padding: 0 0px;
+}
+
+.custom.accordion-body ul {
+    padding: 0;
+    margin: 0;
+}
+
+.custom.accordion-body ul li {
+    list-style: none;
+    padding: 8px 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.custom.accordion-body ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--pc);
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.custom.accordion-body ul li a i {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.custom.accordion-body ul li:hover {
+    color: var(--bc);
+    background: var(--rc);
+}
+
+.custom.accordion-body ul li:hover a {
+    color: var(--sc);
+}
+
+.custom.accordion-item a {
+    text-decoration: none;
+
+}
+
+
+.accordion-button.custom i {
+    padding: 0 10px;
+}
+
+/*ACCORDION CUSTOM END*/
+
+.mobile-menu {
+    width: 350px;
+    position: fixed;
+    left: -380px;
+    top: 0;
+    z-index: 2;
+    background: var(--wc);
+    height: 100%;
+    overflow: auto;
+    transition: .4s;
+    padding: 10px 0;
+}
+#mobileOverlay {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(101, 41, 145, 0.71);
+    z-index: 1;
+    cursor: pointer;
+}
+.mobileAdd {
+    left: 0 !important;
+}
+.mobile-overlay {
+    position: inherit !important;
+}
+/*MOBILE MENU END*/
+
+/* =========banner part start======== */
+#banner{
+    /* padding-top:75px; */
+    background:var(--wc);
+}
+
+.banner_img img{
+    padding-top: 90px;
+}
+
+.banner_text a{
+    font-weight: 500;
+    color: var(--bc);
+    font-size: 16px;
+}
+.banner_text a:hover{
+    text-decoration: underline;
+}
+.banner_text h1{
+    font-size: 62px;
+}
+.banner_text p {
+    font-size: 20px;
+    line-height: 1.4;
+    padding-top: 55px;
+}
+
+.custom-form{
+    height: 65px;
+    width: 60%;
+    background: #ffffff;
+    border: 1px solid #dee1e7;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.custom-form::placeholder{
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--gbc);
+}
+
+.banner_img img{
+    margin-right: -195px;
+}
+/* =========banner part end======== */
+
+/* =======Table part start======= */
+
+.table-design {
+    padding: 10px 40px;
+}
+.custom-table{
+    border: 1px solid #dbdcdf;
+}
+.custom-table thead tr th {
+    padding: 20px 10px;
+    border-bottom: none;
+    border-bottom: 1px solid #dbdcdf !important;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gbc);
+}
+.custom-table tbody img{
+    float: left;
+}
+.custom-table tbody tr td{
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--pc);
+}
+.custom-table tbody tr td h5{
+    font-weight: 400;
+    font-size: 17px;
+}
+.custom-table tbody tr td span{
+    text-transform: uppercase;
+    color: var(--gbc);
+}
+.custom-table tbody tr .change{
+    color: #09855c;
+}
+.custom-table tbody tr:hover{
+    background-color: rgba(251, 247, 247, 0.979);
+}
+.custom-table .buy-btn button {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--wc);
+    background: #098551;
+    border-radius: 4px;
+    padding: 6px 20px;
+    transition: 0.4s;
+}
+.custom-table .buy-btn button:hover{
+    background: #098551c7;
+}
+.table-section .get-started-btn button {
+    font-size: 16px;
+    padding: 12px 16px;
+}
+
+.card-design {
+    border-radius: 5px;
+    padding: 25px 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.card-design:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
+}
+.card-design h5 {
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--bbc);
+}
+.card-design h6{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--gbc);
+}
+.table-section a{
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--bc);
+    padding-left: 10px;
+}
+
+/* =======Table part end======= */
+
+/* =======crypto portfolio part start======= */
+.cripto-portfolio .img-box{
+    width: 72px;
+    height: 72px;
+    background: var(--wc);
+    border-radius: 50px;
+    line-height: 72px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
+}
+/* =======crypto portfolio part End======= */
+
+/* =======cryptocurrency part start======= */
+#cryptocurrency{
+    padding: 80px 0;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.heading h3{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.service{
+    text-align: center;
+}
+.service h4{
+    font-size: 20px;
+}
+.service p {
+    font-size: 16px;
+    padding: 10px 30px;
+}
+.service a{
+    padding: 9px;
+    font-size: 14px;
+}
+hr .cripto-breack{
+    background: red;
+    height: 1px;
+}
+/* =======cryptocurrency part end======= */
+
+/* =======counter part start======= */
+#counter{
+    background: var(--bc);
+    padding: 68px 0;
+}
+
+.counter_text{
+    text-align: center;
+}
+
+.counter_text h3{
+    font-weight: 700;
+    font-size:56px;
+    color: var(--wc);
+}
+
+.counter_text p{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--gc);
+}
+/* =======counter part end======= */
+
+/* =======digital_currency part start======= */
+#cryptocurrency {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+.item{
+    text-align: center;
+    position: relative;
+}
+.item .line::before{
+    width: 170px;
+    height: 1px;
+    content: "";
+    right: -107px;
+    bottom: 90px;
+    position: absolute;
+    background:var(--gbc);
+    
+}
+.item .line::after{
+    width: 170px;
+    height: 1px;
+    content: "";
+    left: -107px;
+    bottom: 90px;
+    position: absolute;
+    background:var(--gbc);
+    
+}
+.item h6{
+    font-size: 20px;
+}
+/* =======digital_currency part end======= */
+
+/* =======Earning part end======= */
+#earning{
+    background: var(--bgc);
+    position: relative;
+}
+.earning_img img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#earning .get-started-btn button {
+    padding: 9px 18px;
+}
+#earning .earn-crypto{
+    padding: 85px 0px;
+}
+
+/* =======Earning part end======= */
+
+
+/*FOOTER SECTION*/
+footer {
+    background: #ffffff;
+    color: var(--sc);
+}
+
+.footer-box img {
+    max-width: 164px;
+    margin-bottom: 20px;
+
+}
+
+.footer-box p {
+    color: var(--sc);
+}
+
+.footer-box h6 {
+    font-weight: 700;
+    border-bottom: 1px solid var(--gc);
+    font-size: 20px;
+}
+
+.footer-box h6 {
+    padding-bottom: 13px;
+}
+
+.footer-menu a {
+    display: block;
+    color: var(--sc);
+    padding: 6px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-box ul li {
+    padding: 6px 0;
+}
+
+.social-media-footer h4 {
+    border-bottom: 1px solid var(--gc);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.social-media-footer a i {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: var(--wc);
+    background: var(--bc);
+    border: 1px solid var(--bc);
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: .3s;
+}
+
+.social-media-footer a i:hover {
+    color: var(--bbc);
+    background: var(--wc);
+}
+
+/* GET NOTIFICATIONS */
+.get-notificaiton .custom-control {
+    height: 50px;
+    width: 70%;
+    border: 2px solid var(--bc);
+    outline: none;
+    border-radius: 4px;
+    background: var(--wc);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--bcc);
+    padding-left: 8px;
+}
+
+.get-notificaiton .custom-control::placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--bcc);
+}
+
+.get-notificaiton button {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    border-radius: 4px;
+    width: 30%;
+    color: var(--wc);
+    background: var(--bc);
+}
+
+/*FOOTER SECTION END*/
+
+/*COPYRIGHT SECTION*/
+.copyright-section p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--bcc);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 30px 0;
+    border-top: 1px solid var(--gc);
+}
+
+/*COPYRIGHT SECTION END*/
